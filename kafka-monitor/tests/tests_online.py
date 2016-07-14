@@ -46,6 +46,10 @@ class TestKafkaMonitor(TestCase):
         self.kafka_monitor._setup_stats()
         self.kafka_monitor.logger = MagicMock()
 
+        print self.kafka_monitor.settings['KAFKA_HOSTS']
+        print self.kafka_monitor.settings['REDIS_HOST']
+        print self.kafka_monitor.settings['REDIS_PORT']
+
         self.redis_conn = redis.Redis(
             host=self.kafka_monitor.settings['REDIS_HOST'],
             port=self.kafka_monitor.settings['REDIS_PORT'])

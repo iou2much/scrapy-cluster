@@ -2,10 +2,10 @@
 # to override please use a custom localsettings.py file
 
 # Redis host configuration
-REDIS_HOST = 'localhost'
+REDIS_HOST = 'redis-svc'
 REDIS_PORT = 6379
 
-KAFKA_HOSTS = 'localhost:9092'
+KAFKA_HOSTS = 'kafka-svc1:9092'
 KAFKA_TOPIC_PREFIX = 'demo'
 KAFKA_CONN_TIMEOUT = 5
 KAFKA_APPID_TOPICS = False

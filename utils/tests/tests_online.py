@@ -366,7 +366,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Online deployment Test"
                                      " Script for Utils")
     parser.add_argument('-r', '--redis-host', action='store',
-                        default='localhost', help="The Redis host ip")
+                        default='redis-svc', help="The Redis host ip")
     parser.add_argument('-p', '--redis-port', action='store', default='6379',
                         help="The Redis port")
 
